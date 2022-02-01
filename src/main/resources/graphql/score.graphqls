@@ -1,0 +1,8 @@
+type Score {
+    gitlabUserId: Int
+    score: Float
+}
+
+type Query {
+    findScores(hackathonId: String, projectId: Int):[Score]
+}
